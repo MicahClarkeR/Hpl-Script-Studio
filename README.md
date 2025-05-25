@@ -1,2 +1,2 @@
-# hpl-editor
+# hpl-script-studio
  
