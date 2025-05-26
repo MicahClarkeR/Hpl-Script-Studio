@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:hpl_editor_application"
         mc:Ignorable="d"
         xmlns:avalonedit="http://icsharpcode.net/sharpdevelop/avalonedit"
-        Title="HPL Editor" Height="600" Width="800">
+        Title="HPL Editor" Height="800" Width="1200">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20" />
@@ -30,7 +30,7 @@
                 <ColumnDefinition Width="*" />
                 <!-- Editor expands to fill -->
                 <ColumnDefinition Width="5" />
-                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="300" />
             </Grid.ColumnDefinitions>
 
             <!-- Left Panel -->
@@ -40,7 +40,7 @@
                            FontFamily="Consolas"
                            FontSize="14"
                            HorizontalScrollBarVisibility="Auto"
-                           VerticalScrollBarVisibility="Auto" />
+                           VerticalScrollBarVisibility="Auto" Margin="0,26,0,0" />
 
             <!-- GridSplitter -->
             <GridSplitter Grid.Column="1"
@@ -104,7 +104,8 @@
                            FontFamily="Consolas"
                            FontSize="14"
                            HorizontalScrollBarVisibility="Auto"
-                           VerticalScrollBarVisibility="Auto" />
+                           VerticalScrollBarVisibility="Auto" Margin="0,26,0,0" />
+                <Label Content="Main Code Editor" Margin="0,0,10,0" Grid.Row="2" VerticalAlignment="Top" FontFamily="Consolas" ToolTip="Main body of code for your map script."/>
             </Grid>
 
             <GridSplitter Grid.Column="3"
@@ -119,7 +120,7 @@
                       d:ItemsSource="{d:SampleData ItemCount=5}"
                       ItemsSource="{Binding Snippets}"
                       SelectionMode="Single"
-                      HorizontalContentAlignment="Stretch">
+                      HorizontalContentAlignment="Stretch" Margin="0,26,0,0">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Expander Header="{Binding Name}">
@@ -135,6 +136,8 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Label Grid.Column="4" Content="Snippet Library" VerticalAlignment="Top" Height="26"/>
+            <Label Content="Global Code" VerticalAlignment="Top" Grid.ColumnSpan="2" Margin="-1,0,4,0" FontFamily="Consolas" ToolTip="Use this for global variable declorations and anything else too important to be tossed in the 'Main Code' section." />
 
         </Grid>
 
