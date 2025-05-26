@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Categories>
+	<Category Name="Custom Snippets">
+		<Snippets>
+			<CodeSnippet>
+				<Name>Custom Code</Name>
+				<Code>void MyCustomFunc(){}</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+</Categories>

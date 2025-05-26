@@ -37,6 +37,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Code\Custom\custom.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Code\DefaultCodeSnippets.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
