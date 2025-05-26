@@ -1,4 +1,4 @@
-# hpl-script-studio
+# HPL Script Studio
  
 The HPL Script Studio is a lightweight code editor designed to make Custom Story development for the game Amnesia The Dark Descent easier and more accessible. Built using C#, WPF, and AvalonEdit.
 
