@@ -16,6 +16,9 @@ using System.Resources;
 using hpl_editor_application.Files;
 using Microsoft.Win32;
 using hpl_editor_application.Managers;
+using System.Collections.ObjectModel;
+using hpl_editor_application.Code;
+using ICSharpCode.AvalonEdit.Snippets;
 
 namespace hpl_editor_application
 {
@@ -24,6 +27,7 @@ namespace hpl_editor_application
     /// </summary>
     public partial class MainWindow : Window
     {
+        public ObservableCollection<CodeSnippetCategory> Snippets => SnippetManager.Snippets;
         public static MainWindow Instance;
         internal static HplFile File;
 
@@ -34,12 +38,15 @@ namespace hpl_editor_application
             KeyboardShortcutManager.Initialise();
 
             InitializeComponent();
-            LoadEditor();
+            InitialiseEditors();
 
+            DataContext = this;
             File = HplFile.Create();
+
+            SnippetManager.Initialise();
         }
 
-        private void LoadEditor()
+        private void InitialiseEditors()
         {
             using Stream s = new MemoryStream(Properties.Resources.HplRules);
             using XmlReader reader = XmlReader.Create(s);
@@ -51,6 +58,8 @@ namespace hpl_editor_application
                 OnEnterEditor.SyntaxHighlighting = 
                 OnLeaveEditor.SyntaxHighlighting = 
                 GlobalEditor.SyntaxHighlighting = highlighter;
+
+            EditorManager.InitialiseEditor(MainEditor, OnStartEditor, OnEnterEditor, OnLeaveEditor, GlobalEditor);
 
             SetTitle();
         }
@@ -67,7 +76,7 @@ namespace hpl_editor_application
 
         public void SetStatus(string status, int time = 4000)
         {
-            Task.Run(async () =>
+            Task.Run(() =>
             {
                 Dispatcher.Invoke(() => StatusBarLabel.Content = status);
                 Thread.Sleep(time);
@@ -101,6 +110,21 @@ namespace hpl_editor_application
         private void MenuSaveAs_Click(object sender, RoutedEventArgs e)
         {
             File.SaveDialog(true);
+        }
+
+        private void TextBlock_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            if (sender is not TextBlock)
+                return;
+
+            TextBlock block = (TextBlock) sender;
+            CodeSnippet snippet = block.DataContext as CodeSnippet;
+            EditorManager.AppendAtCaret(snippet.Code);
+
+            if (block.Parent is ListView)
+            {
+                ((ListView) block.Parent).SelectedIndex = -1;
+            }
         }
     }
 }   

@@ -1,0 +1,1153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Categories>
+	<Category Name="Engine scripts – Main">
+		<Snippets>
+			<CodeSnippet>
+				<Name>OnStart</Name>
+				<Code>void OnStart();</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>OnEnter</Name>
+				<Code>void OnEnter();</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>OnLeave</Name>
+				<Code>void OnLeave();</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>OnGameStart</Name>
+				<Code>void OnGameStart();</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>OnUpdate</Name>
+				<Code>void OnUpdate(float afStep);</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Engine scripts – General">
+		<Snippets>
+			<CodeSnippet>
+				<Name>RandFloat</Name>
+				<Code>float RandFloat(float afMin, float afMax);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>RandInt</Name>
+				<Code>int RandInt(int alMin, int alMax);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>StringContains</Name>
+				<Code>bool StringContains(string &amp;in asString, string &amp;in asSubString);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>StringSub(string</Name>
+				<Code>string&amp; StringSub(string &amp;in asString, int alStart, int alCount);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>StringToInt</Name>
+				<Code>int StringToInt(string &amp;in asString);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>StringToFloat</Name>
+				<Code>float StringToFloat(string &amp;in asString);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>StringToBool</Name>
+				<Code>bool StringToBool(string &amp;in asString);</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Engine scripts – Mathematical Operations">
+		<Snippets>
+			<CodeSnippet>
+				<Name>MathSin</Name>
+				<Code>float MathSin(float afX);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>MathCos</Name>
+				<Code>float MathCos(float afX);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>MathTan</Name>
+				<Code>float MathTan(float afX);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>MathAsin</Name>
+				<Code>float MathAsin(float afX);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>MathAcos</Name>
+				<Code>float MathAcos(float afX);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>MathAtan</Name>
+				<Code>float MathAtan(float afX);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>MathAtan2</Name>
+				<Code>float MathAtan2(float afX, float afY);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>MathSqrt</Name>
+				<Code>float MathSqrt(float afX);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>MathPow</Name>
+				<Code>float MathPow(float afBase, float afExp);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>MathMin</Name>
+				<Code>float MathMin(float afA, float afB);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>MathMax</Name>
+				<Code>float MathMax(float afA, float afB);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>MathClamp</Name>
+				<Code>float MathClamp(float afX, float afMin, float afMax);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>MathAbs</Name>
+				<Code>float MathAbs(float afX);</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Engine scripts – Debugging">
+		<Snippets>
+			<CodeSnippet>
+				<Name>Print</Name>
+				<Code>void Print(string &amp;in asString);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>AddDebugMessage</Name>
+				<Code>void AddDebugMessage(string &amp;in asString, bool abCheckForDuplicates);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>ProgLog</Name>
+				<Code>void ProgLog(string &amp;in asLevel, string &amp;in asMessage);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>ScriptDebugOn</Name>
+				<Code>bool ScriptDebugOn();</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Engine scripts – Variables – Local">
+		<Snippets>
+			<CodeSnippet>
+				<Name>SetLocalVarInt</Name>
+				<Code>
+					void SetLocalVarInt(string &amp;in asName, int alVal);
+					void AddLocalVarInt(string &amp;in asName, int alVal);
+					int GetLocalVarInt(string &amp;in asName);
+				</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetLocalVarFloat</Name>
+				<Code>
+					void SetLocalVarFloat(string &amp;in asName, float afVal);
+					void AddLocalVarFloat(string &amp;in asName, float afVal);
+					float GetLocalVarFloat(string &amp;in asName);
+				</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetLocalVarString</Name>
+				<Code>
+					void SetLocalVarString(string &amp;in asName, const string &amp;in asVal);
+					void AddLocalVarString(string &amp;in asName, string &amp;in asVal);
+					string&amp; GetLocalVarString(string &amp;in asName);
+				</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Engine scripts – Variables – Global">
+		<Snippets>
+			<CodeSnippet>
+				<Name>SetGlobalVarInt</Name>
+				<Code>
+					void SetGlobalVarInt(string &amp;in asName, int alVal);
+					void AddGlobalVarInt(string &amp;in asName, int alVal);
+					int GetGlobalVarInt(string &amp;in asName);
+				</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetGlobalVarFloat</Name>
+				<Code>
+					void SetGlobalVarFloat(string &amp;in asName, float afVal);
+					void AddGlobalVarFloat(string &amp;in asName, float afVal);
+					float GetGlobalVarFloat(string &amp;in asName);
+				</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetGlobalVarString</Name>
+				<Code>
+					void SetGlobalVarString(string &amp;in asName, const string &amp;in asVal);
+					void AddGlobalVarString(string &amp;in asName, string &amp;in asVal);
+					string&amp; GetGlobalVarString(string &amp;in asName);
+				</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Engine scripts – Particle Systems">
+		<Snippets>
+			<CodeSnippet>
+				<Name>PreloadParticleSystem</Name>
+				<Code>void PreloadParticleSystem(string &amp;in asPSFile);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>CreateParticleSystemAtEntity</Name>
+				<Code>void CreateParticleSystemAtEntity(string &amp;in asPSName, string &amp;in asPSFile, string &amp;in asEntity, bool abSavePS);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>CreateParticleSystemAtEntityExt</Name>
+				<Code>
+					void CreateParticleSystemAtEntityExt(string &amp;in asPSName, string &amp;in asPSFile, string &amp;in asEntity, bool abSavePS,
+					float afR, float afG, float afB, float afA, bool abFadeAtDistance, float afFadeMinEnd, float afFadeMinStart,
+					float afFadeMaxStart, float afFadeMaxEnd);
+				</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>DestroyParticleSystem</Name>
+				<Code>void DestroyParticleSystem(string &amp;in asName);</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Engine scripts – Sounds &amp; Music">
+		<Snippets>
+			<CodeSnippet>
+				<Name>PreloadSound</Name>
+				<Code>void PreloadSound(string &amp;in asSoundFile);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>PlayGuiSound</Name>
+				<Code>void PlayGuiSound(string &amp;in asSoundFile, float afVolume);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>PlaySoundAtEntity</Name>
+				<Code>void PlaySoundAtEntity(string &amp;in asSoundName, string &amp;in asSoundFile, string &amp;in asEntity, float afFadeTime, bool abSaveSound);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>FadeInSound</Name>
+				<Code>void FadeInSound(string &amp;in asSoundName, float afFadeTime, bool abPlayStart);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>StopSound</Name>
+				<Code>void StopSound(string &amp;in asSoundName, float afFadeTime);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>PlayMusic</Name>
+				<Code>void PlayMusic(string &amp;in asMusicFile, bool abLoop, float afVolume, float afFadeTime, int alPrio, bool abResume);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>StopMusic</Name>
+				<Code>void StopMusic(float afFadeTime, int alPrio);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>AddEffectVoice</Name>
+				<Code>
+					void AddEffectVoice(string &amp;in asVoiceFile, string &amp;in asEffectFile, string &amp;in asTextCat, string &amp;in asTextEntry,
+					bool abUsePosition, string &amp;in asPosEntity, float afMinDistance, float afMaxDistance);
+				</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>StopAllEffectVoices</Name>
+				<Code>void StopAllEffectVoices(float afFadeOutTime);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>GetEffectVoiceActive</Name>
+				<Code>bool GetEffectVoiceActive();</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetEffectVoiceOverCallback</Name>
+				<Code>void SetEffectVoiceOverCallback(string &amp;in asFunc);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetEffectVoiceOverCallback Callback</Name>
+				<Code>void MyFunc()</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>FadeGlobalSoundVolume</Name>
+				<Code>void FadeGlobalSoundVolume(float afDestVolume, float afTime);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>FadeGlobalSoundSpeed</Name>
+				<Code>void FadeGlobalSoundSpeed(float afDestSpeed, float afTime);</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Engine scripts – Lights">
+		<Snippets>
+			<CodeSnippet>
+				<Name>SetLightVisible</Name>
+				<Code>void SetLightVisible(string &amp;in asLightName, bool abVisible);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>FadeLightTo</Name>
+				<Code>void FadeLightTo(string &amp;in asLightName, float afR, float afG, float afB, float afA, float afRadius, float afTime);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetLightFlickerActive</Name>
+				<Code>void SetLightFlickerActive(string &amp;in asLightName, bool abActive);</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Game scripts – General">
+		<Snippets>
+			<CodeSnippet>
+				<Name>StartCredits</Name>
+				<Code>void StartCredits(string &amp;in asMusic, bool abLoopMusic, string &amp;in asTextCat, string &amp;in asTextEntry, int alEndNum);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>StartDemoEnd</Name>
+				<Code>void StartDemoEnd();</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>AutoSave</Name>
+				<Code>void AutoSave();</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>CheckPoint</Name>
+				<Code>void CheckPoint(string &amp;in asName, string &amp;in asStartPos, string &amp;in asCallback, string &amp;in asDeathHintCat, string &amp;in asDeathHintEntry);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>CheckPoint Callback</Name>
+				<Code>void MyFunc(string &amp;in asName, int alCount)</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>ChangeMap</Name>
+				<Code>void ChangeMap(string &amp;in asMapName, string &amp;in asStartPos, string &amp;in asStartSound, string &amp;in asEndSound);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>ClearSavedMaps</Name>
+				<Code>void ClearSavedMaps();</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>CreateDataCache</Name>
+				<Code>
+					void CreateDataCache();
+					void DestroyDataCache();
+				</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetMapDisplayNameEntry</Name>
+				<Code>void SetMapDisplayNameEntry(string &amp;in asNameEntry);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetSkyBoxActive</Name>
+				<Code>void SetSkyBoxActive(bool abActive);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetSkyBoxTexture</Name>
+				<Code>void SetSkyBoxTexture(string &amp;in asTexture);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetSkyBoxColor</Name>
+				<Code>void SetSkyBoxColor(float afR, float afG, float afB, float afA);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetFogActive</Name>
+				<Code>void SetFogActive(bool abActive);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetFogColor</Name>
+				<Code>void SetFogColor(float afR, float afG, float afB, float afA);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetFogProperties</Name>
+				<Code>void SetFogProperties(float afStart, float afEnd, float afFalloffExp, bool abCulling);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetupLoadScreen</Name>
+				<Code>void SetupLoadScreen(string &amp;in asTextCat, string &amp;in asTextEntry, int alRandomNum, string &amp;in asImageFile);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>UnlockAchievement</Name>
+				<Code>void UnlockAchievement(string &amp;in asName);</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Game scripts – Game Timer">
+		<Snippets>
+			<CodeSnippet>
+				<Name>AddTimer</Name>
+				<Code>void AddTimer(string &amp;in asName, float afTime, string &amp;in asFunction);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>AddTimer Callback</Name>
+				<Code>void MyFunc(string &amp;in asTimer)</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>RemoveTimer</Name>
+				<Code>void RemoveTimer(string &amp;in asName);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>GetTimerTimeLeft</Name>
+				<Code>float GetTimerTimeLeft(string &amp;in asName);</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Game scripts – Screen Effects">
+		<Snippets>
+			<CodeSnippet>
+				<Name>FadeOut</Name>
+				<Code>void FadeOut(float afTime);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>FadeIn</Name>
+				<Code>void FadeIn(float afTime);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>FadeImageTrailTo</Name>
+				<Code>void FadeImageTrailTo(float afAmount, float afSpeed);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>FadeSepiaColorTo</Name>
+				<Code>void FadeSepiaColorTo(float afAmount, float afSpeed);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>FadeRadialBlurTo</Name>
+				<Code>void FadeRadialBlurTo(float afSize, float afSpeed);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetRadialBlurStartDist</Name>
+				<Code>void SetRadialBlurStartDist(float afStartDist);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>StartEffectFlash</Name>
+				<Code>void StartEffectFlash(float afFadeIn, float afWhite, float afFadeOut);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>StartEffectEmotionFlash</Name>
+				<Code>void StartEffectEmotionFlash(string &amp;in asTextCat, string &amp;in asTextEntry, string &amp;in asSound);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>GetFlashbackIsActive</Name>
+				<Code>bool GetFlashbackIsActive();</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>StartPlayerSpawnPS</Name>
+				<Code>
+					void StartPlayerSpawnPS(string &amp;in asSPSFile);
+					void StopPlayerSpawnPS();
+				</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>StartScreenShake</Name>
+				<Code>void StartScreenShake(float afAmount, float afTime, float afFadeInTime, float afFadeOutTime);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetInDarknessEffectsActive</Name>
+				<Code>void SetInDarknessEffectsActive(bool abX);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>ShowScreenImage</Name>
+				<Code>void ShowScreenImage(string &amp;in asImageName, float afX, float afY, float afScale, bool abUseRelativeCoordinates, float afDuration, float afFadeIn, float afFadeOut);</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Game scripts – Insanity">
+		<Snippets>
+			<CodeSnippet>
+				<Name>SetInsanitySetEnabled</Name>
+				<Code>void SetInsanitySetEnabled(string &amp;in asSet, bool abX);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>StartInsanityEvent</Name>
+				<Code>void StartInsanityEvent(string &amp;in asEventName);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>StartRandomInsanityEvent</Name>
+				<Code>void StartRandomInsanityEvent();</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>StopCurrentInsanityEvent</Name>
+				<Code>void StopCurrentInsanityEvent();</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>InsanityEventIsActive</Name>
+				<Code>void InsanityEventIsActive();</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Game scripts – Player">
+		<Snippets>
+			<CodeSnippet>
+				<Name>SetPlayerActive</Name>
+				<Code>void SetPlayerActive(bool abActive);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>ChangePlayerStateToNormal</Name>
+				<Code>void ChangePlayerStateToNormal();</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetPlayerCrouching</Name>
+				<Code>void SetPlayerCrouching(bool abCrouch);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>AddPlayerBodyForce</Name>
+				<Code>void AddPlayerBodyForce(float afX, float afY, float afZ, bool abUseLocalCoords);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>ShowPlayerCrossHairIcons</Name>
+				<Code>void ShowPlayerCrossHairIcons(bool abX);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetPlayerSanity</Name>
+				<Code>
+					void SetPlayerSanity(float afSanity);
+					void AddPlayerSanity(float afSanity);
+					float GetPlayerSanity();
+				</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetPlayerHealth</Name>
+				<Code>
+					void SetPlayerHealth(float afHealth);
+					void AddPlayerHealth(float afHealth);
+					float GetPlayerHealth();
+				</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetPlayerLampOil</Name>
+				<Code>
+					void SetPlayerLampOil(float afOil);
+					void AddPlayerLampOil(float afOil);
+					float GetPlayerLampOil();
+				</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>GetPlayerSpeed</Name>
+				<Code>
+					float GetPlayerSpeed();
+					float GetPlayerYSpeed();
+				</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetSanityDrainDisabled</Name>
+				<Code>void SetSanityDrainDisabled(bool abX);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>GiveSanityBoost</Name>
+				<Code>void GiveSanityBoost();</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>GiveSanityBoostSmall</Name>
+				<Code>void GiveSanityBoostSmall();</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>GiveSanityDamage</Name>
+				<Code>void GiveSanityDamage(float afAmount, bool abUseEffect);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>GivePlayerDamage</Name>
+				<Code>void GivePlayerDamage(float afAmount, string &amp;in asType, bool abSpinHead, bool abLethal);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>FadePlayerFOVMulTo</Name>
+				<Code>void FadePlayerFOVMulTo(float afX, float afSpeed);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>FadePlayerAspectMulTo</Name>
+				<Code>void FadePlayerAspectMulTo(float afX, float afSpeed);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>FadePlayerRollTo</Name>
+				<Code>void FadePlayerRollTo(float afX, float afSpeedMul, float afMaxSpeed);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>MovePlayerForward</Name>
+				<Code>void MovePlayerForward(float afAmount);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>MovePlayerHeadPos</Name>
+				<Code>void MovePlayerHeadPos(float afX, float afY, float afZ, float afSpeed, float afSlowDownDist);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>StartPlayerLookAt</Name>
+				<Code>
+					void StartPlayerLookAt(string &amp;in asEntityName, float afSpeedMul, float afMaxSpeed, string &amp;in asAtTargetCallback);
+					void StopPlayerLookAt();
+				</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetPlayerMoveSpeedMul</Name>
+				<Code>
+					void SetPlayerMoveSpeedMul(float afMul);
+					void SetPlayerRunSpeedMul(float afMul);
+					void SetPlayerLookSpeedMul(float afMul);
+				</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetPlayerJumpForceMul</Name>
+				<Code>void SetPlayerJumpForceMul(float afMul);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetPlayerJumpDisabled</Name>
+				<Code>
+					void SetPlayerJumpDisabled(bool abX);
+					void SetPlayerCrouchDisabled(bool abX);
+				</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>TeleportPlayer</Name>
+				<Code>void TeleportPlayer(string &amp;in asStartPosName);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetLanternActive</Name>
+				<Code>void SetLanternActive(bool abX, bool abUseEffects);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>GetLanternActive</Name>
+				<Code>bool GetLanternActive();</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetLanternDisabled</Name>
+				<Code>void SetLanternDisabled(bool abX);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetLanternLitCallback</Name>
+				<Code>void SetLanternLitCallback(string &amp;in asCallback);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetLanternLitCallback Callback</Name>
+				<Code>MyFunc(bool abLit)</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetMessage</Name>
+				<Code>void SetMessage(string &amp;in asTextCategory, string &amp;in asTextEntry, float afTime);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetDeathHint</Name>
+				<Code>void SetDeathHint(string &amp;in asTextCategory, string &amp;in asTextEntry);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>DisableDeathStartSound</Name>
+				<Code>void DisableDeathStartSound();</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetPlayerPermaDeathSound</Name>
+				<Code>void SetPlayerPermaDeathSound(string &amp;in asSound);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetPlayerFallDamageDisabled</Name>
+				<Code>void SetPlayerFallDamageDisabled(bool abX);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetPlayerPos</Name>
+				<Code>void SetPlayerPos(float afX, float afY, float afZ);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>GetPlayerPosX</Name>
+				<Code>
+					float GetPlayerPosX();
+					float GetPlayerPosY();
+					float GetPlayerPosZ();
+				</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Game scripts – Journal">
+		<Snippets>
+			<CodeSnippet>
+				<Name>AddNote</Name>
+				<Code>void AddNote(string &amp;in asNameAndTextEntry, string &amp;in asImage);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>AddDiary</Name>
+				<Code>void AddDiary(string &amp;in asNameAndTextEntry, string &amp;in asImage);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>ReturnOpenJournal</Name>
+				<Code>void ReturnOpenJournal(bool abOpenJournal);</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Game scripts – Quests">
+		<Snippets>
+			<CodeSnippet>
+				<Name>AddQuest</Name>
+				<Code>void AddQuest(string &amp;in asName, string &amp;in asNameAndTextEntry);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>CompleteQuest</Name>
+				<Code>void CompleteQuest(string &amp;in asName, string &amp;in asNameAndTextEntry);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>QuestIsCompleted</Name>
+				<Code>
+					bool QuestIsCompleted(string &amp;in asName);
+					bool QuestIsAdded(string &amp;in asName);
+				</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetNumberOfQuestsInMap</Name>
+				<Code>void SetNumberOfQuestsInMap(int alNumberOfQuests);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>GiveHint</Name>
+				<Code>void GiveHint(string &amp;in asName, string &amp;in asMessageCat, string &amp;in asMessageEntry, float afTimeShown);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>BlockHint</Name>
+				<Code>
+					void BlockHint(string &amp;in asName);
+					void UnBlockHint(string &amp;in asName);
+				</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>RemoveHint</Name>
+				<Code>void RemoveHint(string &amp;in asName);</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Game scripts – Inventory">
+		<Snippets>
+			<CodeSnippet>
+				<Name>ExitInventory</Name>
+				<Code>void ExitInventory();</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetInventoryDisabled</Name>
+				<Code>void SetInventoryDisabled(bool abX);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetInventoryMessage</Name>
+				<Code>void SetInventoryMessage(string &amp;in asTextCategory, string &amp;in asTextEntry, float afTime);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>GiveItem</Name>
+				<Code>void GiveItem(string &amp;in asName, string &amp;in asType, string &amp;in asSubTypeName, string &amp;in asImageName, float afAmount);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>RemoveItem</Name>
+				<Code>void RemoveItem(string &amp;in asName);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>HasItem</Name>
+				<Code>bool HasItem(string &amp;in asName);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>GiveItemFromFile</Name>
+				<Code>void GiveItemFromFile(string &amp;in asName, string &amp;in asFileName);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>AddCombineCallback</Name>
+				<Code>void AddCombineCallback(string &amp;in asName, string &amp;in asItemA, string &amp;in asItemB, string &amp;in asFunction, bool abAutoRemove);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>AddCombineCallback Callback</Name>
+				<Code>void MyFunc(string &amp;in asItemA, string &amp;in asItemB)</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>RemoveCombineCallback</Name>
+				<Code>void RemoveCombineCallback(string &amp;in asName);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>AddUseItemCallback</Name>
+				<Code>void AddUseItemCallback(string &amp;in asName, string &amp;in asItem, string &amp;in asEntity, string &amp;in asFunction, bool abAutoDestroy);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>AddUseItemCallback Callback</Name>
+				<Code>void MyFunc(string &amp;in asItem, string &amp;in asEntity)</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>RemoveUseItemCallback</Name>
+				<Code>void RemoveUseItemCallback(string &amp;in asName);</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Game scripts – Entities – General">
+		<Snippets>
+			<CodeSnippet>
+				<Name>SetEntityActive</Name>
+				<Code>void SetEntityActive(string &amp;in asName, bool abActive);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetEntityVisible</Name>
+				<Code>void SetEntityVisible(string &amp;in asName, bool abVisible);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>GetEntityExists</Name>
+				<Code>bool GetEntityExists(string &amp;in asName);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetEntityCustomFocusCrossHair</Name>
+				<Code>void SetEntityCustomFocusCrossHair(string &amp;in asName, string&amp; asCrossHair);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>CreateEntityAtArea</Name>
+				<Code>void CreateEntityAtArea(string &amp;in asEntityName, string &amp;in asEntityFile, string &amp;in asAreaName, bool abFullGameSave);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>ReplaceEntity</Name>
+				<Code>void ReplaceEntity(string &amp;in asName, string &amp;in asBodyName, string &amp;in asNewEntityName, string &amp;in asNewEntityFile, bool abFullGameSave);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>PlaceEntityAtEntity</Name>
+				<Code>void PlaceEntityAtEntity(string &amp;in asName, string &amp;in asTargetEntity, string &amp;in asTargetBodyName, bool abUseRotation);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetEntityPos</Name>
+				<Code>void SetEntityPos(string &amp;in asName, float afX, float afY, float afZ);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>GetEntityPosX</Name>
+				<Code>
+					float GetEntityPosX(string &amp;in asName);
+					float GetEntityPosY(string &amp;in asName);
+					float GetEntityPosZ(string &amp;in asName);
+				</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetEntityPlayerLookAtCallback</Name>
+				<Code>void SetEntityPlayerLookAtCallback(string &amp;in asName, string &amp;in asCallback, bool abRemoveWhenLookedAt);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetEntityPlayerLookAtCallback Callback</Name>
+				<Code>void MyFunc(string &amp;in asEntity, int alState)</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetEntityPlayerInteractCallback</Name>
+				<Code>void SetEntityPlayerInteractCallback(string &amp;in asName, string &amp;in asCallback, bool abRemoveOnInteraction);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetEntityPlayerInteractCallback Callback</Name>
+				<Code>void MyFunc(string &amp;in asEntity)</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetEntityCallbackFunc</Name>
+				<Code>void SetEntityCallbackFunc(string &amp;in asName, string &amp;in asCallback);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetEntityCallbackFunc Callback</Name>
+				<Code>void MyFunc(string &amp;in asEntity, string &amp;in asType)</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetEntityConnectionStateChangeCallback</Name>
+				<Code>void SetEntityConnectionStateChangeCallback(string &amp;in asName, string &amp;in asCallback);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetEntityConnectionStateChangeCallback Callback</Name>
+				<Code>void Func(string &amp;in asEntity, int alState)</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetEntityInteractionDisabled</Name>
+				<Code>void SetEntityInteractionDisabled(string &amp;in asName, bool abDisabled);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>BreakJoint</Name>
+				<Code>void BreakJoint (string &amp;in asName);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>AddEntityCollideCallback</Name>
+				<Code>void AddEntityCollideCallback(string &amp;in asParentName, string &amp;in asChildName, string &amp;in asFunction, bool abDeleteOnCollide, int alStates);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>AddEntityCollideCallback Callback</Name>
+				<Code>void MyFunc(string &amp;in asParent, string &amp;in asChild, int alState)</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>RemoveEntityCollideCallback</Name>
+				<Code>void RemoveEntityCollideCallback(string &amp;in asParentName, string &amp;in asChildName);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>GetEntitiesCollide</Name>
+				<Code>bool GetEntitiesCollide(string &amp;in asEntityA, string &amp;in asEntityB);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetBodyMass</Name>
+				<Code>void SetBodyMass(string &amp;in asName, float afMass);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>GetBodyMass</Name>
+				<Code>float GetBodyMass(string &amp;in asName);</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Game scripts – Entities – Props">
+		<Snippets>
+			<CodeSnippet>
+				<Name>SetPropEffectActive</Name>
+				<Code>void SetPropEffectActive(string &amp;in asName, bool abActive, bool abFadeAndPlaySounds);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetPropActiveAndFade</Name>
+				<Code>void SetPropActiveAndFade(string &amp;in asName, bool abActive, float afFadeTime);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetPropStaticPhysics</Name>
+				<Code>void SetPropStaticPhysics(string &amp;in asName, bool abX);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>GetPropIsInteractedWith</Name>
+				<Code>bool GetPropIsInteractedWith(string &amp;in asName);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>RotatePropToSpeed</Name>
+				<Code>void RotatePropToSpeed(string &amp;in asName, float afAcc, float afGoalSpeed, float afAxisX, float afAxisY, float afAxisZ, bool abResetSpeed, string &amp;in asOffsetArea);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>StopPropMovement</Name>
+				<Code>void StopPropMovement(string &amp;in asName);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>AddAttachedPropToProp</Name>
+				<Code>void AddAttachedPropToProp(string &amp;in asPropName, string &amp;in asAttachName, string &amp;in asAttachFile, float afPosX, float afPosY, float afPosZ, float afRotX, float afRotY, float afRotZ);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>AttachPropToProp</Name>
+				<Code>void AttachPropToProp(string &amp;in asPropName, string &amp;in asAttachName, string &amp;in asAttachFile, float afPosX, float afPosY, float afPosZ, float afRotX, float afRotY, float afRotZ);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>RemoveAttachedPropFromProp</Name>
+				<Code>void RemoveAttachedPropFromProp(string &amp;in asPropName, string &amp;in asAttachName);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetPropHealth</Name>
+				<Code>
+					void SetPropHealth(string &amp;in asName, float afHealth);
+					void AddPropHealth(string &amp;in asName, float afHealth);
+					float GetPropHealth(string &amp;in asName);
+				</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>ResetProp</Name>
+				<Code>void ResetProp(string &amp;in asName);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>PlayPropAnimation</Name>
+				<Code>void PlayPropAnimation(string &amp;in asProp, string &amp;in asAnimation, float afFadeTime, bool abLoop, string &amp;in asCallback);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>PlayPropAnimation Callback</Name>
+				<Code>void MyFunc(string &amp;in asProp)</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>AddPropForce</Name>
+				<Code>
+					void AddPropForce(string &amp;in asName, float afX, float afY, float afZ, string &amp;in asCoordSystem);
+					void AddPropImpulse(string &amp;in asName, float afX, float afY, float afZ, string &amp;in asCoordSystem);
+					void AddBodyForce(string &amp;in asName, float afX, float afY, float afZ, string &amp;in asCoordSystem);
+					void AddBodyImpulse(string &amp;in asName, float afX, float afY, float afZ, string &amp;in asCoordSystem);
+				</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Game scripts – Entities – Connections">
+		<Snippets>
+			<CodeSnippet>
+				<Name>InteractConnectPropWithRope</Name>
+				<Code>void InteractConnectPropWithRope(string &amp;in asName, string &amp;in asPropName, string &amp;in asRopeName, bool abInteractOnly, float afSpeedMul, float afToMinSpeed, float afToMaxSpeed, bool abInvert, int alStatesUsed);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>InteractConnectPropWithMoveObject</Name>
+				<Code>void InteractConnectPropWithMoveObject(string &amp;in asName, string &amp;in asPropName, string &amp;in asMoveObjectName, bool abInteractOnly, bool abInvert, int alStatesUsed);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>ConnectEntities</Name>
+				<Code>void ConnectEntities(string &amp;in asName, string &amp;in asMainEntity, string &amp;in asConnectEntity, bool abInvertStateSent, int alStatesUsed, string &amp;in asCallbackFunc);</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Game scripts – Entities – Lamps">
+		<Snippets>
+			<CodeSnippet>
+				<Name>SetLampLit</Name>
+				<Code>void SetLampLit(string &amp;in asName, bool abLit, bool abEffects);</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Game scripts – Entities – Doors">
+		<Snippets>
+			<CodeSnippet>
+				<Name>SetSwingDoorLocked</Name>
+				<Code>void SetSwingDoorLocked(string &amp;in asName, bool abLocked, bool abEffects);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetSwingDoorClosed</Name>
+				<Code>void SetSwingDoorClosed(string &amp;in asName, bool abClosed, bool abEffects);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>GetSwingDoorLocked</Name>
+				<Code>
+					bool GetSwingDoorLocked(string &amp;in asName);
+					bool GetSwingDoorClosed(string &amp;in asName);
+				</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetSwingDoorDisableAutoClose</Name>
+				<Code>void SetSwingDoorDisableAutoClose(string &amp;in asName, bool abDisableAutoClose);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>GetSwingDoorState</Name>
+				<Code>int GetSwingDoorState(string &amp;in asName);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetLevelDoorLocked</Name>
+				<Code>void SetLevelDoorLocked(string &amp;in asName, bool abLocked);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetLevelDoorLockedSound</Name>
+				<Code>void SetLevelDoorLockedSound(string &amp;in asName, string &amp;in asSound);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetLevelDoorLockedText</Name>
+				<Code>void SetLevelDoorLockedText(string &amp;in asName, string &amp;in asTextCat, string &amp;in asTextEntry);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetMoveObjectState</Name>
+				<Code>void SetMoveObjectState(string &amp;in asName, float afState);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetMoveObjectStateExt</Name>
+				<Code>void SetMoveObjectStateExt(string &amp;in asName, float afState, float afAcc, float afMaxSpeed, float afSlowdownDist, bool abResetSpeed);</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Game scripts – Entities – Levers, wheels and buttons">
+		<Snippets>
+			<CodeSnippet>
+				<Name>SetPropObjectStuckState</Name>
+				<Code>
+					void SetPropObjectStuckState(string &amp;in asName, int alState);
+					void SetWheelStuckState(string &amp;in asName, int alState, bool abEffects);
+					void SetLeverStuckState(string &amp;in asName, int alState, bool abEffects);
+				</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetWheelAngle</Name>
+				<Code>void SetWheelAngle(string &amp;in asName, float afAngle, bool abAutoMove);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetWheelInteractionDisablesStuck</Name>
+				<Code>
+					void SetWheelInteractionDisablesStuck(string &amp;in asName, bool abX);
+					void SetLeverInteractionDisablesStuck(string &amp;in asName, bool abX);
+				</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>GetLeverState</Name>
+				<Code>int GetLeverState(string &amp;in asName);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetMultiSliderStuckState</Name>
+				<Code>void SetMultiSliderStuckState(string &amp;in asName, int alStuckState, bool abEffects);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetMultiSliderCallback</Name>
+				<Code>void SetMultiSliderCallback(string &amp;in asName, string &amp;in asCallback);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetMultiSliderCallback Callback</Name>
+				<Code>void MyFunc(string &amp;in asEntity, int alState)</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetButtonSwitchedOn</Name>
+				<Code>void SetButtonSwitchedOn(string &amp;in asName, bool abSwitchedOn, bool abEffects);</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Game scripts – Entities – Sticky areas">
+		<Snippets>
+			<CodeSnippet>
+				<Name>SetAllowStickyAreaAttachment</Name>
+				<Code>void SetAllowStickyAreaAttachment(bool abX);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>AttachPropToStickyArea</Name>
+				<Code>
+					void AttachPropToStickyArea(string &amp;in asAreaName, string &amp;in asProp);
+					void AttachBodyToStickyArea(string &amp;in asAreaName, string &amp;in asBody);
+				</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>DetachFromStickyArea</Name>
+				<Code>void DetachFromStickyArea(string &amp;in asAreaName);</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Game scripts – Entities – NPCs">
+		<Snippets>
+			<CodeSnippet>
+				<Name>SetNPCAwake</Name>
+				<Code>void SetNPCAwake(string &amp;in asName, bool abAwake, bool abEffects);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetNPCFollowPlayer</Name>
+				<Code>void SetNPCFollowPlayer(string &amp;in asName, bool abX);</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+	<Category Name="Game scripts – Entities – Enemies">
+		<Snippets>
+			<CodeSnippet>
+				<Name>SetEnemyDisabled</Name>
+				<Code>void SetEnemyDisabled(string &amp;in asName, bool abDisabled);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetEnemyIsHallucination</Name>
+				<Code>void SetEnemyIsHallucination(string &amp;in asName, bool abX);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>FadeEnemyToSmoke</Name>
+				<Code>void FadeEnemyToSmoke(string &amp;in asName, bool abPlaySound);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>ShowEnemyPlayerPosition</Name>
+				<Code>void ShowEnemyPlayerPosition(string &amp;in asName);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>AlertEnemyOfPlayerPresence</Name>
+				<Code>void AlertEnemyOfPlayerPresence(string &amp;in asName);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetEnemyDisableTriggers</Name>
+				<Code>void SetEnemyDisableTriggers(string &amp;in asName, bool abX);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>AddEnemyPatrolNode</Name>
+				<Code>void AddEnemyPatrolNode(string &amp;in asName, string &amp;in asNodeName, float afWaitTime, string &amp;in asAnimation);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>ClearEnemyPatrolNodes</Name>
+				<Code>void ClearEnemyPatrolNodes(string &amp;in asEnemyName);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetEnemySanityDecreaseActive</Name>
+				<Code>void SetEnemySanityDecreaseActive(string &amp;in asName, bool abX);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>TeleportEnemyToNode</Name>
+				<Code>void TeleportEnemyToNode(string &amp;in asEnemyName, string &amp;in asNodeName, bool abChangeY);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>TeleportEnemyToEntity</Name>
+				<Code>void TeleportEnemyToEntity(string &amp;in asEnemyName, string &amp;in asTargetEntity, string &amp;in asTargetBody, bool abChangeY);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>ChangeManPigPose</Name>
+				<Code>void ChangeManPigPose(string &amp;in asName, string &amp;in asPoseType);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetTeslaPigFadeDisabled</Name>
+				<Code>void SetTeslaPigFadeDisabled(string &amp;in asName, bool abX);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetTeslaPigSoundDisabled</Name>
+				<Code>void SetTeslaPigSoundDisabled(string &amp;in asName, bool abX);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>SetTeslaPigEasyEscapeDisabled</Name>
+				<Code>void SetTeslaPigEasyEscapeDisabled(string &amp;in asName, bool abX);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>ForceTeslaPigSighting</Name>
+				<Code>void ForceTeslaPigSighting(string &amp;in asName);</Code>
+			</CodeSnippet>
+			<CodeSnippet>
+				<Name>GetEnemyStateName(string</Name>
+				<Code>string&amp; GetEnemyStateName(string &amp;in asName);</Code>
+			</CodeSnippet>
+		</Snippets>
+	</Category>
+</Categories>

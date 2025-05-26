@@ -29,6 +29,8 @@
                 <!-- GridSplitter -->
                 <ColumnDefinition Width="*" />
                 <!-- Editor expands to fill -->
+                <ColumnDefinition Width="5" />
+                <ColumnDefinition Width="200" />
             </Grid.ColumnDefinitions>
 
             <!-- Left Panel -->
@@ -104,6 +106,36 @@
                            HorizontalScrollBarVisibility="Auto"
                            VerticalScrollBarVisibility="Auto" />
             </Grid>
+
+            <GridSplitter Grid.Column="3"
+                  Width="5"
+                  HorizontalAlignment="Stretch"
+                  VerticalAlignment="Stretch"
+                  ResizeBehavior="PreviousAndNext"
+                  Background="Gray" />
+
+            <ListView x:Name="FunctionList"
+                      Grid.Column="4"
+                      d:ItemsSource="{d:SampleData ItemCount=5}"
+                      ItemsSource="{Binding Snippets}"
+                      SelectionMode="Single"
+                      HorizontalContentAlignment="Stretch">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Expander Header="{Binding Name}">
+                            <ListView ItemsSource="{Binding Snippets}"
+                              HorizontalContentAlignment="Stretch">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock DataContext="{Binding}" Text="{Binding Name}" MouseUp="TextBlock_MouseUp"/>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </Expander>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
         </Grid>
 
         <Label x:Name="StatusBarLabel" Content="" Grid.Row="2" FontFamily="Consolas" FontSize="10" Background="LightGray"/>
